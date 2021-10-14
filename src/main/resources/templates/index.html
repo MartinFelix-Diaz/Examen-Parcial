@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html <html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/udm/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <div class="container" style="max-width: 400px; margin-top: 50px">
+            <div class="card">
+                <div class="card-header">
+                    Usuario
+                </div>
+                <div class="card-body">
+                    <form action="/add">
+                        <div class="mb-3">
+                            <input type="text" class="form-control m-25" placeholder="Usuario" name="Usuario">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="Password" placeholder="Password">        
+                        </div>
+                        <a href="/main" class="btn btn-primary">Entrar</a>
+                    </form>
+                </div>
+            </div>
+    </body>
+</html>
